@@ -1,0 +1,48 @@
+node_modules/
+dist/
+out/
+release/
+.test-data/
+build/
+.cache/
+.env*
+.vite/
+vite.config.*.timestamp-*
+*.tsbuildinfo
+*-debug.log*
+logs/
+*.log
+.claude-replay.*
+.tmp-*
+/.figma/design-context/
+
+# Platform-managed agentplat state, not project source. In the
+# client-initiated single-repo workspace layout (make's `Path: "."` spec) the
+# repo root IS the workspace root, so these land inside this repo rather than
+# beside it.
+/.plugins/
+/.opencode-skills/
+
+# Local notes, backups, credentials, and workstation state.
+vault/
+vault-before-restore-*/
+backups/
+*.bak
+*.pem
+*.key
+*.p12
+*.pfx
+.npmrc
+.netrc
+credentials.json
+preferences.json
+shortcut.json
+library-state.json
+.DS_Store
+Thumbs.db
+
+# Keep only the build's required Figma site metadata.
+/.figma/*
+!/.figma/make/
+/.figma/make/*
+!/.figma/make/site.json

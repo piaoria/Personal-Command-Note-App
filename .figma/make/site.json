@@ -1,0 +1,10 @@
+{
+  "description": "Quickly access and copy command procedures in a compact floating panel, designed for developers to streamline workflows in terminal or IDE environments.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

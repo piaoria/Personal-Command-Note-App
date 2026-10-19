@@ -1,0 +1,252 @@
+.workspace .panel.parameter-panel {
+  width: min(640px, 100%);
+  height: min(640px, 100dvh);
+  min-width: 0;
+  min-height: 0;
+  max-height: 100dvh;
+  resize: none;
+  border-radius: 12px;
+  color: var(--ink);
+}
+
+.desktop-workspace .panel.parameter-panel {
+  width: 100%;
+  height: 100%;
+  max-height: none;
+  border-radius: 0;
+}
+
+:is(.parameter-panel, .parameter-copy) .parameter-drag-strip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 16px;
+  flex-shrink: 0;
+  user-select: none;
+}
+
+.desktop-workspace .parameter-panel .parameter-drag-strip {
+  app-region: drag;
+  -webkit-app-region: drag;
+}
+
+.parameter-panel .parameter-drag-strip > span {
+  width: 28px;
+  height: 3px;
+  border-radius: 4px;
+  background: var(--edge);
+}
+
+:is(.parameter-panel, .parameter-copy) .parameter-header {
+  height: 56px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 20px;
+  flex-shrink: 0;
+  border-bottom: 1px solid var(--edge);
+  font-size: 10px;
+  color: var(--secondary);
+}
+
+:is(.parameter-panel, .parameter-copy) .parameter-header > span {
+  margin-left: auto;
+}
+
+:is(.parameter-panel, .parameter-copy) .parameter-header > kbd {
+  font-size: 8px;
+}
+
+:is(.parameter-panel, .parameter-copy) .parameter-form {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-height: 0;
+  overflow: hidden;
+  app-region: no-drag;
+  -webkit-app-region: no-drag;
+}
+
+:is(.parameter-panel, .parameter-copy) .parameter-fields {
+  padding: 18px 20px 12px;
+  overflow-y: auto;
+  min-height: 0;
+  flex: 1 1 auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--edge) transparent;
+}
+
+:is(.parameter-panel, .parameter-copy) .parameter-note-heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+:is(.parameter-panel, .parameter-copy) .parameter-note-heading > div {
+  min-width: 0;
+}
+
+:is(.parameter-panel, .parameter-copy) .parameter-note-heading h2 {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 650;
+  color: var(--ink);
+  overflow-wrap: anywhere;
+}
+
+:is(.parameter-panel, .parameter-copy) .parameter-note-heading p {
+  margin: 4px 0 0;
+  color: var(--quiet);
+  font-size: 10px;
+  overflow-wrap: anywhere;
+}
+
+:is(.parameter-panel, .parameter-copy) .parameter-help {
+  margin: 10px 0 14px;
+  color: var(--secondary);
+  font-size: 10px;
+  line-height: 1.7;
+}
+
+:is(.parameter-panel, .parameter-copy) .parameter-field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-top: 14px;
+  color: var(--ink);
+  font-size: 11px;
+}
+
+:is(.parameter-panel, .parameter-copy) .parameter-field > span {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  overflow-wrap: anywhere;
+}
+
+:is(.parameter-panel, .parameter-copy) .parameter-field small {
+  color: var(--quiet);
+  font-size: 9px;
+  flex-shrink: 0;
+}
+
+:is(.parameter-panel, .parameter-copy) .parameter-field input {
+  width: 100%;
+  min-width: 0;
+  border: 1px solid var(--edge);
+  border-radius: 6px;
+  padding: 10px 12px;
+  background: rgb(var(--surface-rgb));
+  color: var(--ink);
+  font-size: 12px;
+}
+
+:is(.parameter-panel, .parameter-copy) .parameter-field input:focus {
+  border-color: var(--secondary);
+  box-shadow: 0 0 0 2px rgba(var(--raised-rgb), .8);
+}
+
+:is(.parameter-panel, .parameter-copy) .parameter-variable-name {
+  color: var(--quiet);
+  font-size: 9px;
+  overflow-wrap: anywhere;
+}
+
+:is(.parameter-panel, .parameter-copy) .parameter-caution {
+  margin-top: 16px;
+  padding: 10px 12px;
+  border-left: 2px solid var(--quiet);
+  border-radius: 4px;
+  background: rgb(var(--raised-rgb));
+  color: var(--secondary);
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font-size: 10px;
+  line-height: 1.7;
+}
+
+:is(.parameter-panel, .parameter-copy) .parameter-copy-area {
+  flex-shrink: 0;
+  padding: 12px 20px 16px;
+  border-top: 1px solid var(--edge);
+}
+
+:is(.parameter-panel, .parameter-copy) .parameter-preview-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px 12px;
+  font-size: 10px;
+  color: var(--secondary);
+}
+
+:is(.parameter-panel, .parameter-copy) .parameter-preview-label > span {
+  color: var(--quiet);
+  font-size: 9px;
+}
+
+:is(.parameter-panel, .parameter-copy) .parameter-preview {
+  margin: 8px 0 0;
+  max-height: 76px;
+  overflow: auto;
+  padding: 10px 12px;
+  border: 1px solid var(--edge);
+  border-radius: 6px;
+  background: rgb(var(--raised-rgb));
+  color: var(--ink);
+  font-size: 11px;
+  line-height: 1.7;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  scrollbar-width: thin;
+}
+
+:is(.parameter-panel, .parameter-copy) .parameter-validation,
+:is(.parameter-panel, .parameter-copy) .parameter-copy-error {
+  margin: 8px 0 0;
+  font-size: 10px;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+  color: var(--quiet);
+}
+
+:is(.parameter-panel, .parameter-copy) .parameter-validation.has-error,
+:is(.parameter-panel, .parameter-copy) .parameter-copy-error {
+  color: #b34a35;
+}
+
+.dark-mode :is(.parameter-panel, .parameter-copy) .parameter-validation.has-error,
+.dark-mode :is(.parameter-panel, .parameter-copy) .parameter-copy-error {
+  color: #ffb69f;
+}
+
+:is(.parameter-panel, .parameter-copy) .parameter-submit {
+  margin-top: 10px;
+  gap: 10px;
+}
+
+:is(.parameter-panel, .parameter-copy) .parameter-submit > kbd {
+  padding: 1px 4px;
+  border: 1px solid currentColor;
+  background: transparent;
+  color: inherit;
+  font-size: 8px;
+  opacity: .65;
+}
+
+.parameter-copy {
+  color: var(--ink);
+  padding-bottom: 12px;
+}
+
+.parameter-copy .parameter-form,
+.parameter-copy .parameter-fields {
+  display: block;
+  overflow: visible;
+}
+
+.parameter-copy .parameter-copy-area {
+  margin-top: 8px;
+}

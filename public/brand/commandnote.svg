@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" fill="none">
+  <title>CommandNote — a little command note</title>
+  <rect x="24" y="24" width="464" height="464" rx="136" fill="#A9E4D2"/>
+  <path d="M170 118h130c12 0 23 5 31 13l60 60c9 9 13 19 13 31v130c0 35-28 64-64 64H170c-36 0-64-29-64-64V182c0-35 28-64 64-64Z" fill="#43736A" fill-opacity=".12"/>
+  <path d="M168 100h130c12 0 23 5 31 13l62 62c9 9 13 19 13 31v132c0 36-28 64-64 64H168c-36 0-64-28-64-64V164c0-36 28-64 64-64Z" fill="#FFFCF4"/>
+  <path d="M302 101v56c0 24 16 40 40 40h60c-2-8-5-15-11-22l-62-62c-8-8-17-11-27-12Z" fill="#D1EEE2"/>
+  <path d="m174 226 35 24-35 24m102-24h44" stroke="#355851" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M223 310c17 18 43 18 60 0" stroke="#355851" stroke-width="16" stroke-linecap="round"/>
+</svg>
